@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "test-python-starter"
+version = "0.1"
+description = ""
+authors = ["Greg Henry <greg.henry@mail.com>"]
+readme = "README.md"
+homepage = ""
+
+[tool.poetry.dependencies]
+python ="^3.8"
+pudb = "*"
+click = "*"
+pytest = "*"
+pytest-sugar = "*"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+pre-commit = "*"
+pytest-cov = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+test-python-starter = "test_python_starter.cli:main"
